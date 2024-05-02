@@ -1,16 +1,37 @@
 // src/pages/HomePage.tsx
 
-const HomePage = () => {
+const PortFolio = () => {
     return (
       <div className="p-8">
-        <h1 className="text-3xl font-bold underline text-center">
-          Bienvenue sur la HomePage !
-        </h1>
-        <p className="mt-4 text-xl text-center">
-          C'est un début avec React et Tailwind CSS.
-        </p>
+        <div className="collapse collapse-arrow bg-base-200">
+        <input type="radio" name="my-accordion-2" defaultChecked /> 
+        <div className="collapse-title text-xl font-medium">
+          Click to open this one and close others
+        </div>
+        <div className="collapse-content"> 
+          <p>hello</p>
+        </div>
+      </div>
+      <div className="collapse collapse-arrow bg-base-200">
+        <input type="radio" name="my-accordion-2" /> 
+        <div className="collapse-title text-xl font-medium">
+          Click to open this one and close others
+        </div>
+        <div className="collapse-content"> 
+          <p>hello</p>
+        </div>
+      </div>
+      <div className="collapse collapse-arrow bg-base-200">
+        <input type="radio" name="my-accordion-2" /> 
+        <div className="collapse-title text-xl font-medium">
+          Click to open this one and close others
+        </div>
+        <div className="collapse-content"> 
+          <p>hello</p>
+        </div>
+      </div>
       </div>
     );
   };
   
-  export default HomePage;
+  export default PortFolio;
