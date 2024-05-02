@@ -1,7 +1,17 @@
 // src/pages/HomePage.tsx
+import React, { useState } from 'react';
+
 
 const HomePage = () => {
+
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleAccordion = () => {
+    setIsOpen(!isOpen);
+  };
+
   return (
+    
       <div className="max-w-4xl mx-auto p-8 bg-gray-100 ">
           <h1 className="text-4xl font-bold underline text-center mb-8">
               Drapo
@@ -48,8 +58,23 @@ const HomePage = () => {
                   Informations récentes ou tendances dans votre domaine qui sont pertinentes pour votre expérience de stage.
               </p>
           </section>
+
+          <div className="p-8">
+            <div className="collapse collapse-arrow bg-base-200" onClick={toggleAccordion}>
+              <input type="radio" name="my-accordion" id="accordion-1" defaultChecked />
+              <label htmlFor="accordion-1" className="collapse-title text-xl font-medium">
+                Click to open this one and close others
+              </label>
+              <div className="collapse-content">
+                <p>hello</p>
+              </div>
+            </div>
+          </div>
+
           
       </div>
+      
+      
       
   );
 };
