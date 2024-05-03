@@ -46,13 +46,13 @@ const HomePage = () => {
   ];
 
   return (
-    <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 bg-gray-50 my-2 rounded-md">
+    <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 bg-gray-50 my-2 rounded-md pb-6">
       <h1 className="text-4xl font-bold  text-center mb-12">
         Rapport de Stage
       </h1>
 
       {sections.map((section, index) => (
-        <div key={index} className="mb-8">
+        <div key={index} className="mb-10">
           <div 
             className="p-6 bg-white shadow-lg rounded-lg flex justify-between items-center cursor-pointer hover:shadow-xl transition-shadow duration-300"
             onClick={() => toggleSection(index)}
