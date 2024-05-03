@@ -4,7 +4,7 @@ const CV = () => {
   return (
     
     <div className="max-w-4xl mx-auto p-8 bg-gray-100">
-      <h1 className="text-4xl font-bold underline text-center mb-8">
+      <h1 className="text-4xl font-bold text-center mb-8">
         CV - Thimothee Ranvin
       </h1>
 

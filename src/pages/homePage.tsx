@@ -1,81 +1,75 @@
 // src/pages/HomePage.tsx
 import React, { useState } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faChevronDown, faChevronUp } from '@fortawesome/free-solid-svg-icons';
+import TestGraph from './TestGraph';
+import entrepriseImage from '../assets/images/entreprise.png';
 
 
 const HomePage = () => {
-
-  const [isOpen, setIsOpen] = useState(false);
-
-  const toggleAccordion = () => {
-    setIsOpen(!isOpen);
-  };
+    const [openSectionIndex, setOpenSectionIndex] = useState<number | null>(null);
+  
+    const toggleSection = (index: number) => {
+        setOpenSectionIndex(openSectionIndex === index ? null : index);
+    };
+  const sections = [
+    {
+        title: "Information sur l'Entreprise",
+        content: "Détails de l'entreprise, localisation, histoire, mission, culture d'entreprise, etc. Vous pourrez ici personnaliser avec plus de détails lorsque vous aurez les informations.",
+        image: entrepriseImage,
+    },
+    {
+      title: "1. Intégration dans l'entreprise",
+      content: "Détails de votre intégration, l'équipe, l'environnement de travail, etc.",
+    },
+    {
+      title: "2. Difficultés rencontrées & Solutions apportées",
+      content: "Description des défis auxquels vous avez été confronté et des solutions que vous avez mises en œuvre.",
+      graph: true,
+    },
+    {
+      title: "3. Aspect technique des missions effectuées",
+      content: "Explication des aspects techniques des tâches réalisées pendant le stage.",
+    },
+    {
+      title: "4. Connaissances mobilisées lors des missions",
+      content: "Liste des connaissances préexistantes que vous avez utilisées durant vos missions.",
+    },
+    {
+      title: "5. Compétences acquises",
+      content: "Discussion sur les nouvelles compétences que vous avez développées pendant votre stage.",
+    },
+    {
+      title: "6. De l'actualité en lien avec mon profil",
+      content: "Informations récentes ou tendances dans votre domaine qui sont pertinentes pour votre expérience de stage.",
+    },
+  ];
 
   return (
-    
-      <div className="max-w-4xl mx-auto p-8 bg-gray-100 ">
-          <h1 className="text-4xl font-bold underline text-center mb-8">
-              Drapo
-          </h1>
+    <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 bg-gray-50 my-2 rounded-md">
+      <h1 className="text-4xl font-bold  text-center mb-12">
+        Rapport de Stage
+      </h1>
 
-          <section className="mb-8">
-              <h2 className="text-3xl font-bold mt-6">1. Intégration dans l'entreprise</h2>
-              <p className="mt-2 text-lg">
-                  Détails de votre intégration, l'équipe, l'environnement de travail, etc.
-              </p>
-          </section>
-
-          <section className="mb-8">
-              <h2 className="text-3xl font-bold mt-6">2. Difficultés rencontrées & Solutions apportées</h2>
-              <p className="mt-2 text-lg">
-                  Description des défis auxquels vous avez été confronté et des solutions que vous avez mises en œuvre.
-              </p>
-          </section>
-
-          <section className="mb-8">
-              <h2 className="text-3xl font-bold mt-6">3. Aspect technique des missions effectuées</h2>
-              <p className="mt-2 text-lg">
-                  Explication des aspects techniques des tâches réalisées pendant le stage.
-              </p>
-          </section>
-
-          <section className="mb-8">
-              <h2 className="text-3xl font-bold mt-6">4. Connaissances mobilisées lors des missions</h2>
-              <p className="mt-2 text-lg">
-                  Liste des connaissances préexistantes que vous avez utilisées durant vos missions.
-              </p>
-          </section>
-
-          <section className="mb-8">
-              <h2 className="text-3xl font-bold mt-6">5. Compétences acquises</h2>
-              <p className="mt-2 text-lg">
-                  Discussion sur les nouvelles compétences que vous avez développées pendant votre stage.
-              </p>
-          </section>
-
-          <section className="mb-8">
-              <h2 className="text-3xl font-bold mt-6">6. De l'actualité en lien avec mon profil</h2>
-              <p className="mt-2 text-lg">
-                  Informations récentes ou tendances dans votre domaine qui sont pertinentes pour votre expérience de stage.
-              </p>
-          </section>
-
-          <div className="p-8">
-            <div className="collapse collapse-arrow bg-base-200" onClick={toggleAccordion}>
-              <input type="radio" name="my-accordion" id="accordion-1" defaultChecked />
-              <label htmlFor="accordion-1" className="collapse-title text-xl font-medium">
-                Click to open this one and close others
-              </label>
-              <div className="collapse-content">
-                <p>hello</p>
-              </div>
-            </div>
+      {sections.map((section, index) => (
+        <div key={index} className="mb-8">
+          <div 
+            className="p-6 bg-white shadow-lg rounded-lg flex justify-between items-center cursor-pointer hover:shadow-xl transition-shadow duration-300"
+            onClick={() => toggleSection(index)}
+          >
+            <h2 className="text-3xl font-bold">{section.title}</h2>
+            <FontAwesomeIcon icon={openSectionIndex === index ? faChevronUp : faChevronDown} />
           </div>
-
-          
-      </div>
-      
-      
-      
+          {openSectionIndex === index && (
+            <div className="p-4 bg-white rounded-b-lg">
+              <p className="text-lg">{section.content}</p>
+              {section.graph && <TestGraph />}
+              {section.image && <img src={section.image} alt="Description de l'entreprise" className="mt-4 max-w-full h-auto" />}
+            </div>
+          )}
+        </div>
+      ))}
+    </div>
   );
 };
 

@@ -6,6 +6,7 @@ import {
   Link
 } from 'react-router-dom';
 import Header from './components/header';
+import Footer from './components/footer';
 import Home from './pages/homePage';
 import CV from './pages/cv';
 import Portfolio from './pages/portfolio';
@@ -34,6 +35,7 @@ function App() {
           <Route path="/portfolio" element={<Portfolio />} />
         </Routes>
       </div>
+      <Footer />
     </Router>
   );
 }
