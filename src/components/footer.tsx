@@ -13,7 +13,7 @@ const Footer = () => {
         </a>
       </div>
       <div className="mt-2">
-        <p>Email : <a href="mailto:your.email@example.com" className="hover:underline">thimothee.ranvinpro@hotmail.com</a></p>
+        <p>Email : <a href="mailto:your.email@example.com" className="hover:underline">thimothee.ranvin@hotmail.com</a></p>
         <p>Tel : <a href="tel:+1234567890" className="hover:underline">06.25.11.75.85</a></p>
       </div>
       <div className="mt-2">
