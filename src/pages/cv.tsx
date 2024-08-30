@@ -11,7 +11,7 @@ const CV = () => {
       <section>
         <h2 className="text-3xl font-bold mt-6 mb-4">Profil</h2>
         <p className="text-lg">
-          Passionné d'informatique et de développement web, je suis actuellement en deuxième année de Bachelor à Ynov Campus Bordeaux en Informatique. Je cherche un stage et une alternance pour continuer mes études.
+        Passionné d'informatique et de développement web, je vais entrer en troisième année de Bachelor à Ynov Campus Bordeaux en Informatique. J'attends que mon alternance démarre chez Drapo Solution pour poursuivre mes études.
         </p>
       </section>
 
@@ -21,8 +21,8 @@ const CV = () => {
           <div className="bg-gray-200 rounded-lg p-4">
             <h4 className="font-semibold">Développement Web</h4>
             <ul className="list-disc list-inside">
-              <li>HTML, CSS, JS, SCSS, Twig</li>
-              <li>Golang, Python, C#, Java, NodeJS</li>
+              <li>HTML, CSS, JS, SCSS, Twig, tailwind css</li>
+              <li>Golang, Python, C#, Java, NodeJS, Laravel, React</li>
             </ul>
           </div>
           <div className="bg-gray-200 rounded-lg p-4">
@@ -40,10 +40,10 @@ const CV = () => {
         <h2 className="text-3xl font-bold mt-6 mb-4">Expériences Professionnelles</h2>
         <div className="space-y-2">
           {[
+            { role: "Stagiaire", company: "Drapo Solutions", period: "06.2024 - 08.2024", tasks: ["Apprenti développeur full stack Technologies : Laravel et React"] },
             { role: "Ajusteur monteur", company: "Lectra, Cestas", period: "07.2021 - 08.2022", tasks: ["Assemblage d'une machine à couper du tissu"] },
             { role: "Préparateur de commande", company: "Lidl, Cestas", period: "05.2021 - 07.2021", tasks: ["Préparation des produits destinés à être livrés"] },
             { role: "Contrôleur qualité aéronautique", company: "Latelec, Liposthey", period: "04.2019 - 08.2020", tasks: ["Établissement des documents de contrôle"] },
-            { role: "Stagiaire", company: "Delobel, Salles", period: "05.2018 - 06.2018", tasks: ["Conception de pièces sur machine à commande numérique"] },
           ].map((exp, index) => (
             <div key={index}>
               <h3 className="text-2xl font-semibold">{exp.role}</h3>

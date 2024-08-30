@@ -16,14 +16,14 @@ const Portfolio = () => {
       name: "Ecommerce",
       description: "Site ecommerce crèer en symfony",
       imageUrl: ImageProjetecommerce,
-      githubUrl: "https://github.com/user/projet2",
+      githubUrl: "https://github.com/fyleeds/ecommerce",
       liveUrl: "https://projet2.com"
     },
     {
       name: "Application météo",
       description: "Application météo fait en c#",
       imageUrl: ImageProjetMeteo,
-      githubUrl: "https://github.com/user/projet3",
+      githubUrl: "https://github.com/rthimoth/appmeteotest",
       liveUrl: "https://projet3.com"
     },
     
@@ -47,7 +47,7 @@ const Portfolio = () => {
         ))}
       </div>
       <div className="text-center mt-8">
-        <a href="https://github.com/rthimoth/laravel" className="text-lg font-bold text-blue-500 hover:text-blue-700">Voir plus sur GitHub</a>
+        <a href="https://github.com/rthimoth" className="text-lg font-bold text-blue-500 hover:text-blue-700">Voir plus sur GitHub</a>
         <a href="https://www.linkedin.com/in/thimothee-ranvin-a946372a0/" className="ml-4 text-lg font-bold text-blue-500 hover:text-blue-700">LinkedIn</a>
       </div>
     </div>

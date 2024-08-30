@@ -36,7 +36,7 @@ const HomePage = () => {
             subsections: [
                 {
                     title: "Présentation",
-                    description: "Drapo Solutions est une agence digitale qui s'adresse à tous les acteurs de la transition énergétique. À l'écoute des besoins du marché, nous développons des solutions sur-mesure pour améliorer vos performances et développer votre volume d'affaires.",
+                    description: "Drapo Solutions est une agence digitale spécialisée dans l'accompagnement des acteurs de la transition énergétique. À l'écoute des besoins du marché, l'entreprise conçoit des solutions sur mesure pour optimiser les performances de ses clients et développer leur volume d'affaires.",
                 },
                 {
                     title: "Localisation",
@@ -50,15 +50,15 @@ const HomePage = () => {
             subsections: [
                 {
                     title: "Introduction",
-                    description: "Mon intégration dans l'entreprise s'est déroulée de manière fluide. J'ai rejoint une équipe d'une dizaine de personnes, chacune apportant des compétences variées en informatique.",
+                    description: "Mon intégration dans l'entreprise s'est déroulée de manière fluide. J'ai rejoint une équipe d'une dizaine de personnes, chacune apportant des compétences variées et complémentaires en informatique.",
                 },
                 {
                     title: "Environnement de travail",
-                    description: "L'environnement de travail est particulier, car le poste est entièrement en distanciel. Cependant, il est possible de se rendre au bureau situé à Bordeaux, si besoin ou simplement si l'envie nous prend.",
+                    description: "L'environnement de travail est particulier, car mon poste est entièrement en distanciel. Cependant, il est possible de se rendre au bureau de Bordeaux, que ce soit par nécessité ou simplement par envie, offrant ainsi une flexibilité appréciable.",
                 },
                 {
                     title: "Premières missions",
-                    description: "Dès mon arrivée, j'ai été rapidement mis dans le bain avec une première mission consistant à développer un site vitrine avancé. Ce projet devait être presque entièrement éditable via une interface d'administration, ce qui m'a permis de me familiariser avec Laravel. Par la suite, j'ai dû me former à React pour répondre aux besoins du projet. Plus récemment, ma première tâche a été de mettre à jour des tests end-to-end en utilisant Playwright.",
+                    description: "Dès mon arrivée, j'ai été rapidement plongé dans l'action avec une première mission consistant à développer un site vitrine avancé. Ce projet devait être presque entièrement éditable via une interface d'administration, ce qui m'a permis de me familiariser avec Laravel. Par la suite, j'ai dû me former à React pour répondre aux besoins du projet. Plus récemment, ma tâche initiale a été de mettre à jour des tests end-to-end en utilisant Playwright. Ces tests sont essentiels pour détecter et corriger les bugs dans l'application de l'entreprise, garantissant ainsi sa stabilité et son bon fonctionnement.",
                 },
             ],
         },
@@ -67,11 +67,11 @@ const HomePage = () => {
             subsections: [
                 {
                     title: "Autonomie",
-                    description: "Au cours de mon stage, j'ai rencontré quelques difficultés liées à l'autonomie. Il m'a fallu passer un cap pour améliorer ma rapidité de compréhension des tâches qui m'étaient attribuées et pour faire les bons choix en termes de solutions techniques.",
+                    description: "Durant mon stage, j'ai fait face à des défis en matière d'autonomie. Au départ, il m'a fallu surmonter certains obstacles pour mieux comprendre rapidement les tâches qui m'étaient confiées et pour faire des choix judicieux en termes de solutions techniques. Ce processus a nécessité un temps d'adaptation, mais il m'a permis de progresser et de gagner en confiance.",
                 },
                 {
                     title: "Résolution des problèmes",
-                    description: "Cette expérience m'a poussé à développer ma capacité à travailler de manière indépendante et à prendre des décisions éclairées plus rapidement.",
+                    description: "Cette expérience m'a incité à renforcer ma capacité à travailler de manière autonome. J'ai appris à prendre des décisions éclairées plus rapidement, ce qui a non seulement amélioré ma réactivité, mais aussi ma capacité à résoudre les problèmes de manière efficace et proactive.",
                 },
             ],
             graph: true,
@@ -101,7 +101,7 @@ const HomePage = () => {
                 },
                 {
                     title: "Développement du site vitrine GAIA semaine 5",
-                    description: "Création d'offres d'emploi avec un espace administrateur permettant de modifier dynamiquement les offres et d'uploader des offres à l'avance pour qu'elles soient visibles le jour voulu.",
+                    description: "Création d'offres d'emploi avec un espace administrateur permettant de modifier dynamiquement les offres et de programmer des offres à l'avance pour qu'elles soient visibles le jour voulu.",
                     images: [offre],
                 },
                 {
@@ -136,21 +136,21 @@ const HomePage = () => {
                 },
                 {
                     title: "Début d'apprentissage de React semaine 9",
-                    description: "Début d'apprentissage de React suivi d'un cours explicatif, pour ensuite essayer de rattraper le wagon et me rendre utile en front pour l'entreprise.",
+                    description: "Début d'apprentissage de React, suivi d'un cours explicatif, pour ensuite essayer de rattraper le retard et me rendre utile en front-end pour l'entreprise.",
                 },
                 {
                     title: "Arrivée sur la plateforme principale de l'entreprise OPX semaine 10",
-                    description: "Travail sur les tests end-to-end qui vont compléter des formulaires et créer des chantiers, utilisant globalement l'application dans son intégralité pour détecter des régressions au fur et à mesure de son avancement.",
+                    description: "Travail sur les tests end-to-end, visant à compléter des formulaires et à créer des chantiers, tout en utilisant l'application dans son ensemble pour identifier et corriger les régressions au fur et à mesure de son développement.",
                     images: [test],
                 },
                 {
                     title: "Retour sur GAIA suite au retour du client semaine 11",
-                    description: "Correction de petits détails sur plusieurs pages de l'application, avec une grosse partie sur le simulateur et le configurateur qu'il a fallu adapter entièrement pour le mobile.",
+                    description: "Correction de petits détails sur plusieurs pages de l'application, en particulier sur le simulateur et le configurateur, qu'il a fallu adapter entièrement pour le mobile à l'aide de Tailwind CSS et React.",
                     images: [simulateur, solution],
                 },
                 {
                     title: "Suite des pages mobile",
-                    // description: ".",
+                    description: ".",
                     images: [configurateur, resultat],
                 },
                 {
@@ -165,7 +165,7 @@ const HomePage = () => {
             subsections: [
                 {
                     title: "Connaissances techniques",
-                    description: "Au cours de ce stage, j'ai dû mobiliser un grand nombre de connaissances acquises durant ma formation, notamment dans l'utilisation de Docker, la réalisation de la logique 'back-end', et le design 'front-end'. Tous les cours liés au développement se sont révélés extrêmement utiles et m'ont grandement aidé à réussir les missions qui m'ont été confiées.",
+                    description: "Au cours de ce stage, j'ai eu l'opportunité de mettre en pratique un large éventail de connaissances acquises durant ma formation, en particulier dans l'utilisation de Docker, la conception de la logique 'back-end', et le design 'front-end'. Les cours liés au développement se sont avérés particulièrement précieux et m'ont fourni les bases solides nécessaires pour accomplir avec succès les missions qui m'ont été confiées.",
                 },
             ],
         },
@@ -174,23 +174,23 @@ const HomePage = () => {
             subsections: [
                 {
                     title: "Autonomie",
-                    description: "J'ai renforcé ma capacité à travailler de manière indépendante, en prenant des initiatives et en gérant mes tâches de manière efficace.",
+                    description: "J'ai considérablement renforcé ma capacité à travailler de manière autonome, en prenant des initiatives et en gérant efficacement mes tâches. Cela m'a permis de mener à bien des projets de manière indépendante tout en respectant les délais.",
                 },
                 {
                     title: "Création de sites vitrines",
-                    description: "J'ai acquis une solide expérience dans la création de sites vitrines, en travaillant sur des projets nécessitant une interface admin éditable.",
+                    description: "J'ai acquis une solide expérience dans la création de sites vitrines, en concevant des interfaces administrables et en répondant aux besoins spécifiques des clients. Mon travail sur ces projets m'a permis de développer une approche centrée sur l'utilisateur tout en maîtrisant les aspects techniques.",
                 },
                 {
                     title: "Tests end-to-end",
-                    description: "J'ai pris des compétences dans la mise à jour et la gestion des tests end-to-end avec Playwright.",
+                    description: "J'ai approfondi mes compétences en matière de tests end-to-end en utilisant Playwright. J'ai participé à la mise à jour et à la gestion de ces tests, ce qui a renforcé ma compréhension des processus de test automatisés et de leur importance pour assurer la qualité du code.",
                 },
                 {
                     title: "Framework React",
-                    description: "J'ai commencé à me familiariser avec l'utilisation de React, posant ainsi les bases pour une maîtrise future de ce framework.",
+                    description: "J'ai commencé à me familiariser avec le framework React, posant ainsi les bases solides pour une maîtrise future. Cette initiation m'a permis de comprendre les concepts fondamentaux de React et de les appliquer dans des projets concrets.",
                 },
                 {
                     title: "Choix de solutions",
-                    description: "J'ai développé des compétences dans l'évaluation et le choix des solutions techniques les plus adaptées aux projets sur lesquels j'ai travaillé.",
+                    description: "J'ai développé une expertise dans l'évaluation et le choix des solutions techniques les plus adaptées aux projets sur lesquels j'ai travaillé. Cette compétence m'a permis de prendre des décisions éclairées pour optimiser les résultats et répondre aux exigences des projets.",
                 },
             ],
         },
@@ -199,7 +199,7 @@ const HomePage = () => {
             subsections: [
                 {
                     title: "Situation actuelle",
-                    description: "Au moment de la rédaction de ce rapport, je suis toujours en stage chez Drapo Solutions, un stage de 4 mois qui m'a énormément enrichi en termes de compétences. Ce stage m'a offert l'opportunité de me spécialiser dans l'utilisation de React et Laravel, ainsi que de développer mes compétences dans l'utilisation de Docker et d'autres outils techniques.",
+                    description: "Au moment de la rédaction de ce rapport, je suis toujours en stage chez Drapo Solutions, un stage de près de 3 mois qui m'a énormément enrichi en termes de compétences. Ce stage m'a offert l'opportunité de me spécialiser dans l'utilisation de React et Laravel, ainsi que de développer mes compétences dans l'utilisation de Docker, Git et d'autres outils techniques tels que Linear.",
                 },
             ],
         },
