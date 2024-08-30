@@ -8,25 +8,21 @@ const Portfolio = () => {
     {
       name: "Forum de discussion",
       description: "établir une interaction entre 2 utilisateurs.",
-      imageUrl: ImageProjet, // Assurez-vous d'avoir des images représentatives pour chaque projet
+      imageUrl: ImageProjet,
       githubUrl: "https://github.com/rthimoth/laravel.git",
-      liveUrl: "https://projet1.com"
     },
     {
       name: "Ecommerce",
-      description: "Site ecommerce crèer en symfony",
+      description: "Site ecommerce créé en Symfony",
       imageUrl: ImageProjetecommerce,
       githubUrl: "https://github.com/fyleeds/ecommerce",
-      liveUrl: "https://projet2.com"
     },
     {
       name: "Application météo",
-      description: "Application météo fait en c#",
+      description: "Application météo faite en C#",
       imageUrl: ImageProjetMeteo,
       githubUrl: "https://github.com/rthimoth/appmeteotest",
-      liveUrl: "https://projet3.com"
     },
-    
     // Ajoutez autant de projets que vous le souhaitez
   ];
 
@@ -41,7 +37,6 @@ const Portfolio = () => {
               <h3 className="text-xl font-bold">{project.name}</h3>
               <p className="text-sm">{project.description}</p>
               <a href={project.githubUrl} target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:text-blue-700">GitHub</a>
-              {project.liveUrl && <a href={project.liveUrl} target="_blank" rel="noopener noreferrer" className="ml-4 text-blue-500 hover:text-blue-700">Voir le projet</a>}
             </div>
           </div>
         ))}

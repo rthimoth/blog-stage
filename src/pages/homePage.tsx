@@ -207,8 +207,10 @@ const HomePage = () => {
 
     return (
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 bg-gray-50 my-2 rounded-md pb-6">
-            <h1 className="text-4xl font-bold text-center mb-12">
-                Rapport de Stage
+            <h1 className="text-3xl font-bold text-center mb-10">
+                <p className='mt-10'>
+                    Rapport de Stage - Thimothee Ranvin
+                </p>
             </h1>
 
             {sections.map((section, index) => (
