@@ -149,12 +149,12 @@ const HomePage = () => {
                     images: [simulateur, solution],
                 },
                 {
-                    title: "Suite des pages mobile",
+                    title: "Suite des pages mobiles",
                     description: ".",
                     images: [configurateur, resultat],
                 },
                 {
-                    title: "Suite des pages mobile",
+                    title: "Suite des pages mobiles",
                     // description: ".",
                     images: [formulaire, question_config],
                 },
